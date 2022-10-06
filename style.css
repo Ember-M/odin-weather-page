@@ -1,0 +1,140 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url('./background.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+}
+.title{
+    position: absolute;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    font-size: 4vw;
+    font-stretch:extra-expanded;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-family: 'EB Garamond', serif;
+    background-color: rgba(0, 0, 0, 0.603);
+    
+}
+
+*{ 
+    font-family: 'Chakra Petch', sans-serif;}
+
+.weatherBox{
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: 1fr 1fr;
+    width: 27.5vw;
+    height: 65vh;
+    background-color: rgba(0, 0, 0, 0.877);
+    color: white;
+    font-size: 1.5vw;
+    margin-left: 15%;
+    border-radius: 16px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+}
+
+#name{
+    grid-row: 1/2;
+    grid-column: 1/3;
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+#conditions{
+    grid-row: 2/3;
+    grid-column: 1/3;
+    font-size: 1.75vw;
+    font-weight: bold;
+}
+#icon{
+    grid-row: 3/5;
+    grid-column: 1/2;
+}
+#currentTemp{
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+#feelsLike{
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+#hiTemp{
+    grid-row: 5/6;
+    grid-column: 1/2;
+}
+#lowTemp{
+    grid-row: 5/6;
+    grid-column: 2/3;
+}
+.searchContainer{
+    display: grid;
+    grid-row: 150px 150px;
+    width: 25vw;
+    height: 30vh;
+    margin-right: auto;
+    margin-left: 10%;
+    background-color: rgba(0, 0, 0, 0.877);
+    border-radius: 16px;
+}
+#info{
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: white;
+    font-size: 1.25vw;
+    padding: 20px;
+}
+#searchBox{
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    grid-row: 2/3;
+    height: 40%;
+    width: 80%;
+    border-radius: 32px;
+    padding-left: 20px;
+    margin-bottom: auto;
+    background-color: rgba(0, 0, 0, 0.562);
+    color: gray;
+    font-size: 1.25vw;
+}
